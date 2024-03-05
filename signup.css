@@ -1,126 +1,6 @@
 body{
-    background:#779ff0;
+    background:linear-gradient(45deg,lightblue,rgb(81, 81, 209),lightblue);
     
-}
-#div1,#div2
-{
-display:flex;
-width:250px;
-height:250px;
-border-radius:50%;
-border:1px solid transparent;
-box-shadow:4px 4px 13px rgb(193, 248, 245);
-backdrop-filter: blur(18px);
-background:linear-gradient(45deg,rgb(28, 7, 187),rgb(6, 28, 227),rgb(69, 86, 240));
-}
-#div3,#div4,#div5
-{
-    display:flex;
-    width:350px;
-    height:350px;
-    border-radius:50%;
-    border:1px solid transparent;
-    box-shadow:4px 2px 15px lightcyan ;
-    backdrop-filter: blur(18px);
-    opacity:0.8;
-    background:linear-gradient(45deg,rgb(28, 7, 187),rgb(6, 28, 227),rgb(69, 86, 240));
-     
-}
-#div1
-{
-animation: c1 20s linear  infinite;
-}
-@keyframes c1
-{
-    0% { transform: translateX(0); }
-    30% { transform: translateX(50px);}
-    40% { transform: translateY(600px);}
-    50% { transform: translateX(700px);} 
-    60% { transform: translateY(400px);}
-    70% { transform: translateX(800px);}
-    80% { transform: translateY(-200px);}
-    90% { transform: translateX(200px);}
-    100% { transform: translateX(0); }
-}
-#div2
-{
-animation: c2 20s linear 0.5s infinite;
-position: absolute;
-       right: 200px;
-        top: 600px;
-}
-@keyframes c2
-{
-    0% { transform: translateY(90PX); }
-    30% { transform: translateY(50px);}
-    40% { transform: translateX(-600px);}
-    50% { transform: translateY(700px);} 
-    60% { transform: translateX(-400px);}
-    70% { transform: translateY(400px);}
-    80% { transform: translateX(-200px);}
-    90% { transform: translateY(-200px);}
-    100% { transform: translateY(0); }
-}
-#div3
-{
-animation: c3 20s linear infinite;
-position: absolute;
-      LEFT: 400px;
-        BOTTOM: 200px;
-}
-@keyframes c3
-{
-    0% { transform: translateX(90PX); }
-    30% { transform: translateX(50px);}
-    40% { transform: translateY(-600px);}
-    50% { transform: translateX(700px);} 
-    60% { transform: translateY(-400px);}
-    70% { transform: translateX(-400px);}
-    80% { transform: translateY(-200px);}
-    90% { transform: translateX(200px);}
-    100% { transform: translateY(90px); }
-}
-#div4
-{
-animation: c4 20s linear  infinite;
-position: absolute;
-      right: 100px;
-        BOTTOM: 200px;
-        width:400px;
-        height:400px;
-}
-@keyframes c4
-{
-    0% { transform: translateX(90PX); }
-    30% { transform: translateX(50px);}
-    40% { transform: translateY(-600px);}
-    50% { transform: translateX(700px);} 
-    60% { transform: translateY(-400px);}
-    70% { transform: translateX(-400px);}
-    80% { transform: translateY(-200px);}
-    90% { transform: translateX(200px);}
-    100% { transform: translateY(90px); }
-}
-#div5
-{
-animation: c5 23s linear  infinite;
-position: absolute;
-       right: 200px;
-        top: 200px;
-        width:500px;
-        height:500px;
-}
-@keyframes c5
-{
-    0% { transform: translateY(90PX); }
-    30% { transform: translateY(50px);}
-    40% { transform: translateX(-600px);}
-    50% { transform: translateY(400px);} 
-    60% { transform: translateX(-400px);}
-    70% { transform: translateY(400px);}
-    80% { transform: translateX(-200px);}
-    90% { transform: translateY(200px);}
-    100% { transform: translateY(0); }
 }
 #signid
 {
@@ -138,7 +18,7 @@ position: absolute;
     gap:1rem;
     text-align: center;
     font-size: 19px;
-    color:rgb(243, 239, 239); 
+    color:black; 
 
 }
 
@@ -149,7 +29,7 @@ position: absolute;
     border-radius:15px 15px 25px 25px;
     width:90%;
     padding:5px;
-    color:rgb(245, 245, 251);
+    color:black;
     text-shadow:1px 1px black;
     background:none;
 
@@ -157,7 +37,7 @@ position: absolute;
 
 #name ,#password,#email,#gen,#num,#dob
 {
-   
+   text-indent: 5px;
     width:85%;
     height:10%;
     text-decoration: none;
@@ -208,12 +88,13 @@ position: absolute;
     padding-right:12px;
     font-size:20px;
     width:350px;
-    color:ivory;
-    BACKGROUND:BLUE;
+    color:black;
+    BACKGROUND:transparent;
+    border :1px solid ivory;  
+    border-radius: 5px;
  
 }
 #admit:hover{
-    background:linear-gradient(65deg,blue,white,blue);
     box-shadow:2px 2px black;
     letter-spacing:4px;
     margin-left:10px;
